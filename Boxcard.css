@@ -1,5 +1,9 @@
-#DOB{
-    background-color: blue;
+#outer-box{
+    background-color: brown;
     color: white;
+    align-items: center;
+    justify-content: center;
+    display:wrap;
+    width: 400px;
     
 }
