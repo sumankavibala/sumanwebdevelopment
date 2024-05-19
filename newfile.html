@@ -7,12 +7,34 @@
     <!-- link tag with rel attribute as icon to show icon near webpage name -->
     <link rel="icon"
         href="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" />
-    <link rel="stylesheet" href="stylesheet.css">
-    </head>
+    <!-- Below link tag is used to fetch stylesheet information from external stylesheet     -->
+    <!-- Here, "stylesheet" must be mentioned in "rel" attribute and address must be given inside "href" attribute -->
+    <link rel="stylesheet" href="/newfile.css">
+    <style>
+        #id1{
+            font-style: italic;
+            background-color: greenyellow;
+            color: blueviolet;
+        }
+
+        #id2{
+            font-style:oblique;
+            background-color: white;
+            color: blue;
+        }
+
+        .class1{
+            font-style: initial;
+            background-color: white;
+            color: brown;
+        }
+    </style>
+</head>
 
 <body>
     <!-- types of header tag -->
     <h1>h1 header</h1>
+    <p style="font-weight: 60px; font-size: 32px;"><b> h1 header </b></p>
     <h2>h2 header</h2>
     <h3>h3 header</h3>
     <h4>h4 header</h4>
@@ -259,17 +281,53 @@
     </audio>
     <br>
     <hr>
+    <!-- iframe tag insert a live web application (if available and not blocked) inside our web application     -->
+    <!-- Below iframe syntax is copied directly from youtube website     -->
     <iframe width="560" height="315" src="https://www.youtube.com/embed/BZcS8RT1SOg?si=kiDAZcFnydLElmD2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <br>
     <hr>
+    <!-- iframe need width and height to show the live web application     -->
     <iframe src="https://nutz.in/" width="500px" height="300px"></iframe>
     <br>
     <hr>
-    <h1 style="background-color: brown;"> Header 1 with BG using inline style</h1>
+    <!-- Inline css - consist of stylsheet inside the html tag itself    -->
+    <!-- Below is an example of inline css stylesheet inside a h1 header tag     -->
+    <h1 style="background-color: yellowgreen; color: black;">header 1 with inline css</h1>
     <br>
     <hr>
-    <div class="class1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="id1">Voluptatum explicabo officia temporibus</span> molestiae ipsum eos nobis, quisquam eum reiciendis unde facilis ab? Dolor quibusdam repellat quisquam odio commodi molestiae aperiam.</div>
-
+    <!-- div tag is an block level element tag which occupies whole width of the screen even the content is small     -->     -->
+    <!-- Below div tag contains a header tag with inline css stylesheet and a span with inline css stylesheet    -->
+    <div>
+        Lorem ipsum dolor sit amet, 
+    <!-- Below h6 header tag consist of inline CSS stylesheet -->
+        <h6 style="background-color: blueviolet; color: white;"> adipisicing elit</h6>
+         A minima et totam pariatur soluta aut quos adipisci architecto eos? 
+    <!-- Span tag is an inline element which mean it ooccupies only the content inside the span tag, it won't take whole width     -->
+    <!-- Here the span tag is inside the div tag, so the inline styled content inside the span tag will be appear inside the content of div tag          -->
+         <span style="background-color: blue; color: blanchedalmond;"> Sint nemo natus iusto totam </span>
+         amet molestiae ut quaerat nam earum!
+    </div>
+    <br>
+    <hr>
+    <!-- id attribute contains an unique name, we can insert internal or external css stylehseet inside that unique name     -->
+    <!-- we can't use same id name for two tags     -->
+    <!-- id name in css stylesheet starts with #     -->
+    <div id="id1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsam porro culpa voluptatibus, quae magni rem quisquam suscipit quis sapiente nisi enim modi consequuntur amet corrupti odio placeat repudiandae in?
+    </div>
+    <br>
+    <hr>
+    <!-- class attribute can be used in multiple tags, we can insert internal or external css stylehseet inside that class name     -->
+    <div class="class1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="id1"> tenetur repellendus,</span> esse voluptate totam dolores doloremque quos numquam, voluptates eveniet quo perspiciatis delectus animi fuga voluptatum aspernatur quidem veniam? Cupiditate!
+    </div>
+    <br>
+    <hr>
+    <!-- Below "id3" id attribute take the css stylesheet element from external css stylesheet,      -->
+    <!-- To use external CSS stylesheet, We have to configure address and attribute in head tag of this html file    -->
+    <div id="id3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ex fugit repellendus cum deleniti quam maxime autem rerum neque asperiores quas, dignissimos qui quae, nihil quos eos ipsam corrupti esse.
+    </div>
 </body>
 
 </html>

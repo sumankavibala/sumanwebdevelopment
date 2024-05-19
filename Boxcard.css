@@ -1,0 +1,29 @@
+#outer-box{
+    background-color: brown;
+
+    border-radius: 5px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display:wrap;
+    width: 400px;
+    padding:10px;
+    margin-left: 450px ;
+    margin-top: 80px;
+    
+}
+
+input,select{
+    border-radius: 6px;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    border-color: grey 5px solid;
+}
+
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

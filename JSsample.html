@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS try</title>
+</head>
+<body>
+    <div>
+        <input type="number" placeholder="Enter any Number" id="getnumber"/>
+        <br>
+        <br>
+        <button onclick="getPush()">Push</button>
+        <h1 id="pushbutton"> </h1>
+        <button onclick="getUnshift()">Unshift</button>
+        <h1 id="unshiftbutton"> </h1>
+        <button onclick="getFilter()">Filter</button>
+        <h1 id="filterbutton"> </h1>
+        <button onclick="getFind()">Find</button>
+        <h1 id="findbutton"> </h1>
+        <button onclick="getFindLast()">Find</button>
+        <h1 id="findlastbutton"> </h1>
+    </div>
+</body>
+<script>
+   
+    function getPush(){
+        var userInput = document.getElementById('getnumber').value;
+        arrayResult=[...userInput.toString()];
+        arrayResult.push(1010);
+        document.getElementById('pushbutton').innerHTML=arrayResult;
+    }
+
+    function getUnshift(){
+        var userInput = document.getElementById('getnumber').value;
+        arrayResult=[...userInput.toString()];
+        arrayResult.unshift(1010);
+        document.getElementById('unshiftbutton').innerHTML=arrayResult;
+    }
+    
+    function getFilter(){
+        var userInput = document.getElementById('getnumber').value;
+        var arrayResult=Array.from(String(userInput),Number);
+        var a=arrayResult.filter((num) => num===5);
+        document.getElementById('filterbutton').innerHTML=a;
+    }
+    
+    function getFind(){
+        var userInput = document.getElementById('getnumber').value;
+        var arrayResult=Array.from(String(userInput),Number);
+        var a=arrayResult.find((num) => num>5);
+        document.getElementById('findbutton').innerHTML=a;
+    }
+
+    function getFindLast(){
+        var userInput = document.getElementById('getnumber').value;
+        var arrayResult=Array.from(String(userInput),Number);
+        var a=arrayResult.getFindLast((num) => num>5);
+        document.getElementById('findlastbutton').innerHTML=a;
+    }
+</script>
+</html>
