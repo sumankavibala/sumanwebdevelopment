@@ -1,0 +1,84 @@
+h3 {
+  color: #1ca39f;
+}
+
+h2 {
+  color: rgb(237, 12, 222);
+}
+#para1 {
+  font: 18px;
+  color: rgb(247, 8, 8);
+  background-color: rgb(0, 0, 0);
+  border: 5px solid red;
+}
+
+.commonpara {
+  font: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border: 3px solid red;
+}
+
+div {
+  background-color: red;
+  color: white;
+  width: 500px;
+  padding: 30px;
+  letter-spacing: 3px;
+  border: 3px solid black;
+  margin: 0px;
+  font:25px;
+}
+
+#outer-box {
+  width: 700px;
+  height: 160px;
+  font: 15px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  gap:10px;
+  justify-content:center;
+  align-items:center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  /* font: 15px;
+  background-color: black;
+  color: red;
+  border: 2px solid red;
+  letter-spacing: 2px; */
+}
+
+#box1 {
+  background-color: black;
+  color: yellow;
+  border: 2px solid red;
+  font: 30px;
+  /* float:left; */
+}
+
+#box2 {
+    background-color: black;
+    color: yellowgreen;
+    border: 2px solid red;
+    /* float:left; */
+}
+
+#box3 {
+    background-color: black;
+    color: orange;
+    border: 2px solid red;
+    /* float:left; */
+}
+
+#box4 {
+  background-color: black;
+  color: blue;
+  border: 2px solid red;
+  /* float:left; */
+}
+
